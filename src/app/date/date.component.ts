@@ -23,5 +23,5 @@ export class DateComponent implements OnInit {
    write(): string {
     return this.value1 += "a";
   }
-
+  // added one line code
 }

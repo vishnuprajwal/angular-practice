@@ -1,0 +1,24 @@
+<div class="main-container" style="margin:50px;">
+
+    <div class="input-container">
+        <p class="field-name">A</p>
+        <input type='number' id="value1" [(ngModel)]="value1">
+    </div>
+    <div class="input-container">
+        <p class="field-name">B</p>
+        <input type="number" id="value2" [(ngModel)]="value2">
+    </div>
+    <div class="input-container">
+        <p class="field-name">C</p>
+        <input type="number" id="value3" [(ngModel)]="value3">
+    </div>
+
+    <div class="input-container">
+        <button (click)="calculateTriangle()">Submit</button>
+    </div>
+    <br>
+    <!-- <div>
+        <p>{{write()}}</p>
+    </div> -->
+    <br> {{triAngleResult}}
+</div>

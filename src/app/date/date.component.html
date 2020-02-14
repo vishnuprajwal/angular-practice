@@ -1,0 +1,35 @@
+<div class="main-container" style="margin: 50px;">
+
+    <div class="input-container">
+        <p class="field-name:">Date:</p>
+        <div class="row">
+            <div class='col-sm-6'>
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker1' style="border-radius: 6%;">
+                        <input type='date' id="dateValue" [(ngModel)]="todayDate" />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <div class='col-sm-6'>
+                <div class="form-group">
+                    <div class='input-group date'>
+                        <input type='text' [(ngModel)]="value1" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <br>
+        <p>{{todayDate | date:'shortDate'}}</p>
+        <p>{{todayDate | date:'fullDate'}}</p>
+        <p>{{value1}}</p>
+    </div>
+</div>
